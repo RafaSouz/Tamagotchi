@@ -1,7 +1,6 @@
 ﻿using PokeApi.Classes;
 using RestSharp;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace PokeApi.Metodos;
 

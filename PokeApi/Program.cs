@@ -1,5 +1,4 @@
-﻿using RestSharp;
-using PokeApi.Metodos;
+﻿using PokeApi.Classes;
 
 namespace PokeApi
 {
@@ -9,7 +8,7 @@ namespace PokeApi
         {
             Console.WriteLine("Escolha seu pokemon!");
             
-            var Pet = new ListaPokemon().GetPokemon();
+            var Pet = new Mascote().NovoMascote();
 
             Console.WriteLine(Pet);
         }

@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿using PokeApi.Metodos;
 
 namespace PokeApi.Classes;
 
@@ -8,6 +8,11 @@ public class Mascote
     public int Height { get; set; }
     public int Weight { get; set; }
     public List<Ability> Abilities { get; set; }
+
+    public Mascote NovoMascote()
+    {
+        return new ListaPokemon().GetPokemon();
+    }
 
     public override string ToString()
     {
