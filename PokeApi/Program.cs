@@ -1,16 +1,16 @@
-﻿using PokeApi.Classes;
+﻿using PokeApi.Controller;
+using PokeApi.Models;
 
-namespace PokeApi
+namespace PokeApi;
+
+public class Tamagotchi
 {
-    public class Tamagotchi
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Escolha seu pokemon!");
-            
-            var Pet = new Mascote().NovoMascote();
+        Console.WriteLine("Qual seu nome?");
+        var Nome = Console.ReadLine();
+        var Mascotes = new List<Mascote>();
 
-            Console.WriteLine(Pet);
-        }
+        new Menu().Iniciar(Nome,Mascotes);
     }
 }
